@@ -1,44 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Lancer Admin Panel
 
-## Available Scripts
+-   Admin panal for [**Lancer**](https://github.com/naveen-murali/lancer-admin-panel.git) a freelancers platform.
 
-In the project directory, you can run:
+##### Technologies Used:
 
-### `yarn start`
+-   <b>NodeJS</b> (v16.14.2)
+-   <b>ExpressJS</b> (v4.17.3)
+-   <b>ReactJS</b> (v17.0.2)
+-   <b>Yarn</b> (v1.22.18)
+-   <b>Socket.io</b> (v4.4.1)
+-   <b>Redux Toolkit</b> (v1.5.1)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### Hosting:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-   <b>AWS EC2</b>
+-   <b>Nginx</b>
 
-### `yarn test`
+<br>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**API**
 
-### `yarn build`
+Website : [`https://lancer.unityshop.shop`](https://lancer.unityshop.shop)<br>
+Source Code: [`https://github.com/naveen-murali/lancer.git`](https://github.com/naveen-murali/lancer.git)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Admin Panal**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Website : [`https://lancer-admin.unityshop.shop`](https://lancer-admin.unityshop.shop)<br>
+Source Code : [`https://github.com/naveen-murali/lancer-admin-panel.git`](https://github.com/naveen-murali/lancer-admin-panel.git)<br>
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Requirements**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For running Lancer, you will only need [**Docker**](https://docs.docker.com/engine/install/) and [**Docker Compose**](https://docs.docker.com/compose/install/) or [**Nodejs**](https://nodejs.org/en/) (_make sure that the nodejs version is 16.14.2_) installed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Clone Repository**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    $ git clone https://github.com/naveen-murali/lancer.git
+    $ cd lancer
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Running the project**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Running the application without docker<br>
+
+**For Development**
+
+    $ yarn start
+
+<br>
+
+Running the application with docker
+
+**For Production**
+
+    $ docker-compose -f docker-compose-dev.yml up
+
+**For Production**
+
+    $ docker-compose up -d
+
+---
