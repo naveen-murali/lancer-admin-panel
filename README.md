@@ -30,6 +30,10 @@ Source Code: [`https://github.com/naveen-murali/lancer.git`](https://github.com/
 Website : [`https://lancer-admin.unityshop.shop`](https://lancer-admin.unityshop.shop)<br>
 Source Code : [`https://github.com/naveen-murali/lancer-admin-panel.git`](https://github.com/naveen-murali/lancer-admin-panel.git)<br>
 
+<br>
+
+![MarineGEO circle logo](/public/assets/readme-imge.png "MarineGEO logo")
+
 ---
 
 ## **Requirements**
