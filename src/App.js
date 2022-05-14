@@ -9,6 +9,7 @@ import ServiceScreen from './screens/ServiceScreen';
 import NotFoundScreen from './screens/NotFoundScreen';
 import CategoryScreen from './screens/CategoryScreen';
 import TransactionScreen from './screens/TransactionScreen';
+import UsersDetailsScreen from './screens/UsersDetailsScreen';
 import ServiceDetailsScreen from './screens/ServiceDetailsScreen';
 import CategoryDetailsScreen from './screens/CategoryDetailsScreen';
 
@@ -51,6 +52,8 @@ const App = () => {
               <Route path='' element={<AuthGuard childern={<UsersScreen />} />} />
               <Route path='page/:pageNumber' element={<AuthGuard childern={<UsersScreen />} />} />
               <Route path=':search/page/:pageNumber' element={<AuthGuard childern={<UsersScreen />} />} />
+              <Route path=':id/orders/page/:pageNumber' element={<AuthGuard childern={<UsersDetailsScreen />} />} />
+              <Route path=':id' element={<AuthGuard childern={<UsersDetailsScreen />} />} />
               <Route path='*' element={<AuthGuard childern={<NotFoundScreen />} />} />
             </Route>
 

@@ -4,6 +4,7 @@ import { io } from 'socket.io-client';
 import { getAdminInfo } from '../features/Admin/adminSlice';
 import { setLancer } from '../features/Lancer/lancerSlice';
 import { showErrorAlert } from '../features/MainAlert/mainAlertSlice';
+import { SOCKET_BASE_URL } from "../utils/app.util";
 
 export const useSocket = (setUpSocket = () => { }) => {
     const [socket, setSocket] = useState(null);
@@ -12,7 +13,7 @@ export const useSocket = (setUpSocket = () => { }) => {
     const { adminInfo } = useSelector(getAdminInfo);
     useEffect(() => {
         if (adminInfo) {
-            const socket = io("http://localhost:3000", {
+            const socket = io(SOCKET_BASE_URL, {
                 extraHeaders: {
                     authorization: `Bearer ${adminInfo.token}`
                 }

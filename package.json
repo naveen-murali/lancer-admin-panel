@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.26.1",
     "chart.js": "^3.7.1",
+    "javascript-time-ago": "^2.3.13",
     "moment": "^2.29.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.2",
@@ -35,7 +36,10 @@
     "start": "PORT=8000 BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev:docker": "docker-compose -f docker-compose-dev.yml up",
+    "dev:docker:build": "docker-compose -f docker-compose-dev.yml up --build",
+    "start:docker": "docker-compose up -d"
   },
   "eslintConfig": {
     "extends": "react-app"

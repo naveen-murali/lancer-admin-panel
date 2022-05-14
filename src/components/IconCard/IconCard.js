@@ -1,5 +1,4 @@
 import React, { memo } from 'react';
-import { Col } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export const IconCard = memo(({ title, value, icon, path }) => {

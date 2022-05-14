@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  lancer-admin:
+   build: .
+   container_name: lancer-admin-v1
+   image: naveenmurali/lancer-admin:v1
+   ports:
+     - 8000:80

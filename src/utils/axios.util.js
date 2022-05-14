@@ -1,6 +1,6 @@
 import axios from 'axios';
+import { BASE_URL } from "./app.util";
 
 export const axiosConfig = axios.create({
-    // baseURL: 'https://lancer.unityshop.shop/api'
-    baseURL: 'http://localhost:3000/api'
+    baseURL: BASE_URL
 });

@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  lancer-admin-dev:
+   build: 
+     context: .
+     dockerfile: Dockerfile.dev
+   container_name: lancer-admin-dev
+   image: lancer-admin:dev
+   volumes:
+     - ./src:/lancer-admin-panal/src
+   ports:
+     - 8000:8000
